@@ -3,11 +3,11 @@ import React from "react";
 const Welcome = () => {
   return (
     <section className="bg-[#fcf9f6] w-full py-16">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6">
-        {/* Left: Big outlined text */}
-        <div className="flex-1 flex flex-col items-center md:items-start">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 md:px-8">
+        {/* Left: Big Outlined Text */}
+        <div className="w-full lg:w-1/3 mb-10 lg:mb-0 flex justify-center lg:justify-start">
           <h1
-            className="text-[48px] md:text-[64px] font-light leading-[1.1] tracking-wider text-left"
+            className="text-[36px] sm:text-[48px] md:text-[56px] lg:text-[64px] font-light leading-tight tracking-wider text-center lg:text-left"
             style={{
               fontFamily: "Montserrat, Arial, sans-serif",
               letterSpacing: "0.05em",
@@ -24,32 +24,33 @@ const Welcome = () => {
             CRESCENT
           </h1>
         </div>
-        {/* Center: Welcome and description */}
-        <div className="flex-1 flex flex-col items-center md:items-start mt-10 md:mt-0 px-0 md:px-8">
-          <h2 className="text-2xl md:text-3xl font-semibold text-[#48483f] mb-4 text-center md:text-left">
+
+        {/* Center: Welcome Content */}
+        <div className="w-full lg:w-1/3 flex flex-col items-center lg:items-start text-center lg:text-left px-2 sm:px-6">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#48483f] mb-4">
             WELCOME TO <span className="font-bold text-[#232323]">CRESCENT</span>
           </h2>
-          <p className="text-[#48483f] text-base md:text-lg mb-4 text-center md:text-left">
+          <p className="text-[#48483f] text-sm sm:text-base md:text-lg mb-4">
             Situated in the heart of Serilingampalle, Hyderabad, Candeur Crescent, is the embodiment of luxury and a refined lifestyle for the residents.
           </p>
-          <p className="text-[#48483f] text-base md:text-lg mb-4 text-center md:text-left">
+          <p className="text-[#48483f] text-sm sm:text-base md:text-lg mb-4">
             To establish a new standard for highrise apartments, Candeur Crescent, is designed to change the city skyline of Hyderabad.
           </p>
-          <p className="font-bold text-[#232323] text-lg mb-2 text-center md:text-left">
+          <p className="font-bold text-[#232323] text-base sm:text-lg mb-3">
             RERA No. : <span className="font-extrabold">P02500004515</span>
           </p>
-          <button className="mt-2 px-7 py-2 border-2 border-[#232323] rounded-full text-[#232323] font-semibold hover:bg-[#232323] hover:text-white transition">
+          <button className="mt-2 px-6 py-2 border-2 border-[#232323] rounded-full text-[#232323] font-semibold hover:bg-[#232323] hover:text-white transition">
             Enquire Now
           </button>
         </div>
-        {/* Right: Building image with moon */}
-        <div className="flex-1 flex justify-center md:justify-end mt-10 md:mt-0">
+
+        {/* Right: Image */}
+        <div className="w-full lg:w-1/3 flex justify-center lg:justify-end mt-10 lg:mt-0">
           <img
             src="./right_glb.png"
             alt="crescent buildings"
-            className="w-[340px] h-[340px] object-contain"
+            className="w-[260px] sm:w-[300px] md:w-[340px] h-auto object-contain rounded-full"
             style={{
-              borderRadius: "50%",
               boxShadow: "0 0 0 0 #fff",
               background: "transparent",
             }}
