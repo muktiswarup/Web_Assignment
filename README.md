@@ -18,6 +18,7 @@ This is a simple responsive website built using **React** and **Tailwind CSS** a
 1. Clone the repo
 2. npm install
 3. npm run dev
+
 ✍️ Author
-Your Name – Chandra Sekhar Jena
+ Name – Chandra Sekhar Jena
   
